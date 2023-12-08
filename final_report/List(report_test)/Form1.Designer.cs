@@ -32,6 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.commentbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox_check = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titlebox
@@ -67,11 +69,33 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "comment";
             // 
+            // comboBox_check
+            // 
+            this.comboBox_check.FormattingEnabled = true;
+            this.comboBox_check.Items.AddRange(new object[] {
+            "과제",
+            "시험"});
+            this.comboBox_check.Location = new System.Drawing.Point(651, 264);
+            this.comboBox_check.Name = "comboBox_check";
+            this.comboBox_check.Size = new System.Drawing.Size(187, 32);
+            this.comboBox_check.TabIndex = 23;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(554, 264);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "선택";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.comboBox_check);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.commentbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.titlebox);
@@ -89,6 +113,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox commentbox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox_check;
+        private System.Windows.Forms.Label label3;
     }
 }
 
