@@ -53,6 +53,8 @@ namespace List_report_test_
 
             row["Comment"] = commentbox.Text;
 
+            row["Date"] = datebox.Text;
+
 
             if (check1.Checked)
             {
@@ -77,6 +79,7 @@ namespace List_report_test_
 
             titlebox.Text = "";
             commentbox.Text = "";
+            datebox.Text = "";
             comboBox_check.Text = "";
         }
 
@@ -96,6 +99,11 @@ namespace List_report_test_
                 oRow.HeaderCell.Value = oRow.Index.ToString();
             }
             dataGridView1.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            datebox.Text = monthCalendar1.SelectionRange.Start.ToShortDateString();
         }
     }
 }

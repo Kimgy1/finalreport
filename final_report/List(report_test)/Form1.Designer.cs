@@ -43,6 +43,8 @@
             this.delbutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.datebox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -50,7 +52,7 @@
             // 
             // titlebox
             // 
-            this.titlebox.Location = new System.Drawing.Point(651, 53);
+            this.titlebox.Location = new System.Drawing.Point(651, 104);
             this.titlebox.Name = "titlebox";
             this.titlebox.Size = new System.Drawing.Size(432, 35);
             this.titlebox.TabIndex = 18;
@@ -58,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(565, 53);
+            this.label1.Location = new System.Drawing.Point(565, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 24);
             this.label1.TabIndex = 17;
@@ -66,7 +68,7 @@
             // 
             // commentbox
             // 
-            this.commentbox.Location = new System.Drawing.Point(651, 119);
+            this.commentbox.Location = new System.Drawing.Point(651, 170);
             this.commentbox.Multiline = true;
             this.commentbox.Name = "commentbox";
             this.commentbox.Size = new System.Drawing.Size(432, 118);
@@ -75,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(506, 119);
+            this.label2.Location = new System.Drawing.Point(506, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 19;
@@ -87,7 +89,7 @@
             this.comboBox_check.Items.AddRange(new object[] {
             "과제",
             "시험"});
-            this.comboBox_check.Location = new System.Drawing.Point(651, 264);
+            this.comboBox_check.Location = new System.Drawing.Point(651, 315);
             this.comboBox_check.Name = "comboBox_check";
             this.comboBox_check.Size = new System.Drawing.Size(187, 32);
             this.comboBox_check.TabIndex = 23;
@@ -95,7 +97,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(554, 264);
+            this.label3.Location = new System.Drawing.Point(554, 315);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 22;
@@ -193,12 +195,31 @@
             this.monthCalendar1.Location = new System.Drawing.Point(37, 14);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 27;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // datebox
+            // 
+            this.datebox.Location = new System.Drawing.Point(651, 34);
+            this.datebox.Name = "datebox";
+            this.datebox.Size = new System.Drawing.Size(432, 35);
+            this.datebox.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(554, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 24);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Date";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.datebox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.save_button);
@@ -237,6 +258,8 @@
         private System.Windows.Forms.Button delbutton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.TextBox datebox;
+        private System.Windows.Forms.Label label4;
     }
 }
 
