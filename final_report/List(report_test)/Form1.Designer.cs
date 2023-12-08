@@ -34,6 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_check = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.check2 = new System.Windows.Forms.RadioButton();
+            this.check1 = new System.Windows.Forms.RadioButton();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlebox
@@ -89,11 +93,45 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "선택";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.check2);
+            this.groupBox2.Controls.Add(this.check1);
+            this.groupBox2.Location = new System.Drawing.Point(37, 347);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(378, 87);
+            this.groupBox2.TabIndex = 24;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "중요도";
+            // 
+            // check2
+            // 
+            this.check2.AutoSize = true;
+            this.check2.Location = new System.Drawing.Point(196, 38);
+            this.check2.Name = "check2";
+            this.check2.Size = new System.Drawing.Size(89, 28);
+            this.check2.TabIndex = 1;
+            this.check2.TabStop = true;
+            this.check2.Text = "보통";
+            this.check2.UseVisualStyleBackColor = true;
+            // 
+            // check1
+            // 
+            this.check1.AutoSize = true;
+            this.check1.Location = new System.Drawing.Point(14, 38);
+            this.check1.Name = "check1";
+            this.check1.Size = new System.Drawing.Size(89, 28);
+            this.check1.TabIndex = 0;
+            this.check1.TabStop = true;
+            this.check1.Text = "중요";
+            this.check1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.comboBox_check);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.commentbox);
@@ -102,6 +140,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "List";
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,6 +155,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox_check;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton check2;
+        private System.Windows.Forms.RadioButton check1;
     }
 }
 
