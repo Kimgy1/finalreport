@@ -37,6 +37,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.check2 = new System.Windows.Forms.RadioButton();
             this.check1 = new System.Windows.Forms.RadioButton();
+            this.save_button = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,11 +127,21 @@
             this.check1.Text = "중요";
             this.check1.UseVisualStyleBackColor = true;
             // 
+            // save_button
+            // 
+            this.save_button.Location = new System.Drawing.Point(510, 360);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(573, 74);
+            this.save_button.TabIndex = 25;
+            this.save_button.Text = "등록";
+            this.save_button.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.comboBox_check);
             this.Controls.Add(this.label3);
@@ -158,6 +169,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton check2;
         private System.Windows.Forms.RadioButton check1;
+        private System.Windows.Forms.Button save_button;
     }
 }
 
