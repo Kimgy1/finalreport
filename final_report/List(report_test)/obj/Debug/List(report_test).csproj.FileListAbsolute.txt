@@ -1,0 +1,10 @@
+C:\finalreport\final_report\List(report_test)\bin\Debug\List(report_test).exe.config
+C:\finalreport\final_report\List(report_test)\bin\Debug\List(report_test).exe
+C:\finalreport\final_report\List(report_test)\bin\Debug\List(report_test).pdb
+C:\finalreport\final_report\List(report_test)\obj\Debug\List(report_test).csproj.AssemblyReference.cache
+C:\finalreport\final_report\List(report_test)\obj\Debug\List_report_test_.Form1.resources
+C:\finalreport\final_report\List(report_test)\obj\Debug\List_report_test_.Properties.Resources.resources
+C:\finalreport\final_report\List(report_test)\obj\Debug\List(report_test).csproj.GenerateResource.cache
+C:\finalreport\final_report\List(report_test)\obj\Debug\List(report_test).csproj.CoreCompileInputs.cache
+C:\finalreport\final_report\List(report_test)\obj\Debug\List(report_test).exe
+C:\finalreport\final_report\List(report_test)\obj\Debug\List(report_test).pdb

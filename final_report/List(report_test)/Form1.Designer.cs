@@ -165,6 +165,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(243, 32);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // delbutton
             // 
@@ -174,6 +175,7 @@
             this.delbutton.TabIndex = 2;
             this.delbutton.Text = "일정삭제";
             this.delbutton.UseVisualStyleBackColor = true;
+            this.delbutton.Click += new System.EventHandler(this.delbutton_Click);
             // 
             // dataGridView1
             // 
