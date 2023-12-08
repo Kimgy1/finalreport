@@ -42,6 +42,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.delbutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -187,11 +188,18 @@
             this.dataGridView1.Size = new System.Drawing.Size(1022, 262);
             this.dataGridView1.TabIndex = 0;
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(37, 14);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox2);
@@ -228,6 +236,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button delbutton;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
