@@ -39,6 +39,7 @@
             this.check1 = new System.Windows.Forms.RadioButton();
             this.save_button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.delbutton = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -148,11 +149,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(947, 231);
             this.dataGridView1.TabIndex = 26;
             // 
+            // delbutton
+            // 
+            this.delbutton.Location = new System.Drawing.Point(872, 503);
+            this.delbutton.Name = "delbutton";
+            this.delbutton.Size = new System.Drawing.Size(154, 44);
+            this.delbutton.TabIndex = 27;
+            this.delbutton.Text = "일정삭제";
+            this.delbutton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.delbutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox2);
@@ -185,6 +196,7 @@
         private System.Windows.Forms.RadioButton check1;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button delbutton;
     }
 }
 
