@@ -12,6 +12,7 @@ namespace List_report_test_
 {
     public partial class Form1 : Form
     {
+        DataSet ds = new DataSet();
         public Form1()
         {
             InitializeComponent();
