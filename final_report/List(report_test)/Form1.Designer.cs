@@ -38,10 +38,12 @@
             this.check2 = new System.Windows.Forms.RadioButton();
             this.check1 = new System.Windows.Forms.RadioButton();
             this.save_button = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.delbutton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.delbutton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,24 +142,17 @@
             this.save_button.Text = "등록";
             this.save_button.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // groupBox1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(79, 553);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 37;
-            this.dataGridView1.Size = new System.Drawing.Size(947, 231);
-            this.dataGridView1.TabIndex = 26;
-            // 
-            // delbutton
-            // 
-            this.delbutton.Location = new System.Drawing.Point(872, 503);
-            this.delbutton.Name = "delbutton";
-            this.delbutton.Size = new System.Drawing.Size(154, 44);
-            this.delbutton.TabIndex = 27;
-            this.delbutton.Text = "일정삭제";
-            this.delbutton.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.delbutton);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Location = new System.Drawing.Point(37, 457);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1076, 362);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "check";
             // 
             // comboBox1
             // 
@@ -165,19 +160,36 @@
             this.comboBox1.Items.AddRange(new object[] {
             "과제",
             "시험"});
-            this.comboBox1.Location = new System.Drawing.Point(79, 515);
+            this.comboBox1.Location = new System.Drawing.Point(24, 34);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 32);
-            this.comboBox1.TabIndex = 28;
+            this.comboBox1.Size = new System.Drawing.Size(243, 32);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // delbutton
+            // 
+            this.delbutton.Location = new System.Drawing.Point(817, 26);
+            this.delbutton.Name = "delbutton";
+            this.delbutton.Size = new System.Drawing.Size(229, 52);
+            this.delbutton.TabIndex = 2;
+            this.delbutton.Text = "일정삭제";
+            this.delbutton.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 84);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 37;
+            this.dataGridView1.Size = new System.Drawing.Size(1022, 262);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.delbutton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.comboBox_check);
@@ -190,6 +202,7 @@
             this.Text = "List";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,9 +221,10 @@
         private System.Windows.Forms.RadioButton check2;
         private System.Windows.Forms.RadioButton check1;
         private System.Windows.Forms.Button save_button;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button delbutton;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button delbutton;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
