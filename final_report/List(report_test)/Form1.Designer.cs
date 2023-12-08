@@ -141,6 +141,7 @@
             this.save_button.TabIndex = 25;
             this.save_button.Text = "등록";
             this.save_button.UseVisualStyleBackColor = true;
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             // 
             // groupBox1
             // 

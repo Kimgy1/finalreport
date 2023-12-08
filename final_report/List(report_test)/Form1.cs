@@ -17,5 +17,35 @@ namespace List_report_test_
         {
             InitializeComponent();
         }
+
+        private void save_button_Click(object sender, EventArgs e)
+        {
+            bool bCheckTable = false;
+
+            if (ds.Tables.Contains(comboBox_check.Text))
+            {
+                bCheckTable = true;
+            }
+
+            DataTable dt = null;
+
+            if (!bCheckTable)
+            {
+                dt = new DataTable(comboBox_check.Text);
+
+                DataColumn colTitle = new DataColumn("Title", typeof(string));
+                DataColumn colComment = new DataColumn("Comment", typeof(string));
+                DataColumn colCheck = new DataColumn("Check", typeof(string));
+                DataColumn colDate = new DataColumn("Date", typeof(string));
+
+                dt.Columns.Add(colDate);
+                dt.Columns.Add(colTitle);
+                dt.Columns.Add(colComment);
+                dt.Columns.Add(colCheck);
+            }
+
+            else
+                dt = ds.Tables[comboBox_check.Text];
+        }
     }
 }
