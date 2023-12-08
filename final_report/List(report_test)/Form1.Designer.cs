@@ -28,20 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.titlebox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // titlebox
+            // 
+            this.titlebox.Location = new System.Drawing.Point(651, 53);
+            this.titlebox.Name = "titlebox";
+            this.titlebox.Size = new System.Drawing.Size(432, 35);
+            this.titlebox.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(565, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 24);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "title";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.titlebox);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "List";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox titlebox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
