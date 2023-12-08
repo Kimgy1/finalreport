@@ -36,7 +36,9 @@ namespace List_report_test_
                 DataColumn colTitle = new DataColumn("Title", typeof(string));
                 DataColumn colComment = new DataColumn("Comment", typeof(string));
                 DataColumn colCheck = new DataColumn("Check", typeof(string));
-                
+                DataColumn colDate = new DataColumn("Date", typeof(string));
+
+                dt.Columns.Add(colDate);
                 dt.Columns.Add(colTitle);
                 dt.Columns.Add(colComment);
                 dt.Columns.Add(colCheck);
