@@ -40,6 +40,7 @@
             this.save_button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.delbutton = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -158,11 +159,23 @@
             this.delbutton.Text = "일정삭제";
             this.delbutton.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "과제",
+            "시험"});
+            this.comboBox1.Location = new System.Drawing.Point(79, 515);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(168, 32);
+            this.comboBox1.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 839);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.delbutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.save_button);
@@ -197,6 +210,7 @@
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button delbutton;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
